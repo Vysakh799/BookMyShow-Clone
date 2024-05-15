@@ -1,3 +1,99 @@
-p{
-    background-color: red;
+
+/* First navigation bar */
+
+.navbar1{
+    /* background-color: blanchedalmond; */
+    display: flex;
+    /* justify-content: space-evenly; */
+    height: 65px;
+}
+
+.logo svg{
+    margin-top: 13px;
+}
+.search{
+    /* background-color: blue; */
+    margin-left: 1%;
+}
+.search input{
+    margin-top: 12px;
+    width: 500px;
+    padding: 6px;
+    padding-left: 35px;
+    border: 1px solid rgb(210, 210, 210) ;
+    border-radius: 5px;
+}
+#searchicon{
+    position: relative;
+    left: 10px;
+    bottom: 33px;
+}
+.location{
+    margin-left: 25%;
+    display: flex;
+    /* background-color: red; */
+}
+.location p,i{
+    margin-top: 22px;
+    width: 50px;
+}
+.location  i{
+    font-size: 12px;
+}
+.signup input{
+    margin-top: 15px;
+    width: 65px;
+    height: 30px;
+    background-color: rgb(219, 65, 91);
+    color: white;
+    border: 1px solid rgb(219, 65, 91);
+    border-radius: 6px;
+}
+.menu{
+    /* background-color: red; */
+    margin-top: 15px;
+    margin-left: 2%;
+}
+.menu i{
+    font-size: 25px;
+}
+
+/* Second navigation bar */
+
+.navbar2{
+    background-color: whitesmoke;
+}
+.navbar2_1{
+    display: flex;  
+}
+.navbar2_1 p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.rightside{
+    display: flex;
+    margin-left:45%;
+}
+.rightside p{
+    font-size: 12px;
+    margin-top: 15px;
+}
+.leftside{
+    display: flex;
+}
+.leftside p{
+    margin-top: 10px;
+}
+
+/* Ads Carousel */
+
+.ads{
+    margin-top: 20px;
+}
+.carousel{
+    height: 300px;
+}
+.carousel-item img{
+    height: 300px;
+    border-radius: 15px;
 }
