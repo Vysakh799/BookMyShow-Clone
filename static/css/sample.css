@@ -97,3 +97,55 @@
     height: 300px;
     border-radius: 15px;
 }
+
+/* Movies bar1 */
+.movies1{
+    margin-top: 20px;
+}
+
+.heads{
+    display: flex;
+    /* background-color: aliceblue; */
+}
+.headslast{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 69%;
+    color: red;
+}
+.headslast i{
+    margin-top: -8px;
+    margin-left: 5px;
+    font-size: 13px;
+}
+.heads p{
+    font-size: 25px;
+    font-weight: 700;
+}
+.headslast p{
+    margin-top: 10px;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* Movie Template */
+
+.movie_slides{
+    display: flex;
+}
+.template img{
+    height: 378px;
+    border-radius: 11px;
+}
+.head p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.genere p{
+    font-size:15px ;
+    margin-top: -15px;
+    color: grey;
+    font-weight: 400;
+}
