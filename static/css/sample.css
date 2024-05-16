@@ -72,7 +72,7 @@
 }
 .rightside{
     display: flex;
-    margin-left:45%;
+    margin-left:43%;
 }
 .rightside p{
     font-size: 12px;
@@ -112,7 +112,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 69%;
+    margin-left: 68%;
     color: red;
 }
 .headslast i{
@@ -134,6 +134,7 @@
 
 .movie_slides{
     display: flex;
+    overflow: scroll;
 }
 .template img{
     height: 378px;
@@ -148,4 +149,70 @@
     margin-top: -15px;
     color: grey;
     font-weight: 400;
+}
+
+/* Ad 2 */
+.ads2{
+    margin-top: 100px;
+}
+
+.ads2 img{
+    height: 93px;
+}
+
+/* Ad 3 */
+.ads3{
+    margin-top: 100px;
+}
+.ads3 p{
+    font-size: 23px;
+    font-weight: 700;
+}
+.templates{
+    display: flex;
+}
+.templates img{
+    height: 222.4px;
+    border-radius: 15px;
+}
+
+/* Premiere page */
+
+.premiere{
+    background-color: rgb(43, 49, 72);
+    color: rgb(255, 255, 255);
+    margin-top: 50px;
+}
+.premiere_in .logo img{
+    border-radius: 50%;
+    height: 60px;
+}
+.s_dis{
+    margin-left: 20px;
+}
+.premiere_mainlogo .s_dis p{
+    font-size: 25px;
+    font-weight: 700;
+}
+#s_disc{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+.premiere_mainlogo{
+    display: flex;
+    position: relative;
+    top: 30px;
+}
+.premiere_template{
+    margin-top: 60px;
+}
+.temp_head p{
+    font-size: 25px;
+    font-weight: 700;
+}
+#temp_disc{
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -20px;
 }
