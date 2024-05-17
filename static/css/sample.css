@@ -137,7 +137,7 @@
     overflow: scroll;
 }
 .template img{
-    height: 378px;
+    height: 420px;
     border-radius: 11px;
 }
 .head p{
@@ -150,6 +150,28 @@
     color: grey;
     font-weight: 400;
 }
+/* width */
+.movie_slides::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  
+  /* Track */
+  .movie_slides::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .movie_slides::-webkit-scrollbar-thumb {
+    background: rgb(255, 255, 255); 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .movie_slides::-webkit-scrollbar-thumb:hover {
+    background: rgb(123, 121, 121); 
+  }
 
 /* Ad 2 */
 .ads2{
@@ -182,6 +204,7 @@
     background-color: rgb(43, 49, 72);
     color: rgb(255, 255, 255);
     margin-top: 50px;
+    height: 700px;
 }
 .premiere_in .logo img{
     border-radius: 50%;
@@ -215,4 +238,59 @@
     font-size: 15px;
     font-weight: 400;
     margin-top: -20px;
+}
+.pre-template img{
+    height: 378px;
+    border-radius: 11px;
+}
+.pre-temp-disc p{
+    font-size: 18px;
+    font-weight: 500;
+}
+#lang{
+    font-size: 16px;
+    margin-top: -20px;
+}
+.pre-templates{
+    display: flex;
+    overflow-x: scroll;
+}
+.pre-templates div{
+    margin-right: 15px;
+}
+.pre-templates::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  /* Track */
+  .pre-templates::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(43, 49, 72); 
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .pre-templates::-webkit-scrollbar-thumb {
+    background: rgb(27, 34, 61);
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  .pre-templates::-webkit-scrollbar-thumb:hover {
+    background: rgb(123, 121, 121); 
+  }
+
+/* Explore Activites */
+
+.explore{
+    margin-top: 35px;
+}
+.exp-templates{
+    display: flex;
+}
+.exp-templates div{
+    margin-right: 20px;
+}
+.exp-head{
+    font-size: 23px;
+    font-weight: 700;
 }
