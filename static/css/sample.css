@@ -1,4 +1,7 @@
 
+.main{
+    background-color: rgb(230, 230, 230);
+}
 /* First navigation bar */
 
 .navbar1{
@@ -158,13 +161,13 @@
   
   /* Track */
   .movie_slides::-webkit-scrollbar-track {
-    box-shadow: inset 0 0 5px rgb(255, 255, 255); 
+    box-shadow: inset 0 0 5px rgb(230, 230, 230);
     border-radius: 10px;
   }
    
   /* Handle */
   .movie_slides::-webkit-scrollbar-thumb {
-    background: rgb(255, 255, 255); 
+    background:rgb(230, 230, 230);
     border-radius: 10px;
   }
   
@@ -270,7 +273,7 @@
    
   /* Handle */
   .pre-templates::-webkit-scrollbar-thumb {
-    background: rgb(27, 34, 61);
+    background: rgb(43, 49, 72);
     border-radius: 10px;
   }
   
@@ -288,9 +291,159 @@
     display: flex;
 }
 .exp-templates div{
-    margin-right: 20px;
+    margin-right: 10px;
 }
 .exp-head{
     font-size: 23px;
     font-weight: 700;
+}
+
+/* Outdoor Activities */
+
+.outdoor{
+    margin-top: 35px;
+}
+.outdoor-head p{
+    font-size: 23px;
+    font-weight: 700;
+}
+.outdoor-templates{
+    display: flex;
+    overflow-x: scroll;
+}
+.outdoor-templates div{
+    margin-right: 10px;
+}
+.outdoor-templates::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  /* Track */
+  .outdoor-templates::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .outdoor-templates::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230); 
+    border-radius: 10px;
+  }
+
+  
+  /* Handle on hover */
+  .outdoor-templates::-webkit-scrollbar-thumb:hover {
+    
+    background: rgb(107, 106, 106); 
+  }
+
+/* Trending Searches */
+
+.trending-searches{
+    margin-top: 35px;
+}
+.line{
+    display: flex;
+    flex-wrap: wrap;
+}
+.line div{
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.trd{
+    background-color: white;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+    height: 60px;
+}
+.trd p{
+    font-size: 19px;
+    color: red;
+    font-weight: 600;
+}
+#type{
+    color: rgb(105, 105, 105);
+    font-size: 15px;
+    font-weight: 400;
+    margin-top: -20px;
+}
+
+/* Contact Part */
+
+.contact{
+    color: white;
+    background-color:rgb(49, 48, 53); 
+    padding-top: 20px;
+    margin-top: 35px;
+}
+.c-in{
+    display: flex;
+}
+.first-part{
+    display: flex;
+}
+.first-part img{
+    height: 40px;
+}
+.first-part p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+.second-part p{
+    margin-top: 11px;
+    margin-left: 10px;
+    font-weight: 400;
+}
+.third-part{
+    margin-left: 10%
+}
+
+/* Service Part */
+
+.services{
+    background-color:rgb(64, 63, 66);
+    height: 130px;
+    color: rgb(124, 124, 124);
+}
+.services svg{
+    fill: rgb(198, 198, 199);
+}
+.s-in{
+    padding-top: 23px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.s-in p{
+    margin-top: 10px;
+}
+.first-one, .second-one, .third-one{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+
+/* Footer part */
+
+.footer-one{
+    background-color:rgb(49, 48, 53); 
+}
+.f-in{
+    padding-top: 20px;
+}
+.ft{
+    color: rgb(124, 124, 124);
+}
+.ft p{
+    font-size: 12px;
+    margin-top: -15px;
+}
+#ft-head{
+    font-size: 13px;
+    font-weight: 500;
+    margin-top: 15px;
 }
