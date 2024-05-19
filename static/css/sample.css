@@ -44,7 +44,7 @@
     font-size: 12px;
 }
 .signup input{
-    margin-top: 15px;
+    margin-top: 20px;
     width: 65px;
     height: 30px;
     background-color: rgb(219, 65, 91);
@@ -54,7 +54,7 @@
 }
 .menu{
     /* background-color: red; */
-    margin-top: 15px;
+    margin-top: 13px;
     margin-left: 2%;
 }
 .menu i{
@@ -131,6 +131,10 @@
     margin-top: 10px;
     font-size: 15px;
     font-weight: 400;
+    color: red;
+}
+.heads .headslast a{
+    text-decoration: none;
 }
 
 /* Movie Template */
@@ -431,6 +435,7 @@
 
 .footer-one{
     background-color:rgb(49, 48, 53); 
+    height: 650px;
 }
 .f-in{
     padding-top: 20px;
@@ -446,4 +451,172 @@
     font-size: 13px;
     font-weight: 500;
     margin-top: 15px;
+}
+.ft-logo{
+    display: flex;
+    margin-top: 35px;
+    /* background-color: rgb(255, 255, 255); */
+}
+hr.hr-ft{
+    border: 1px solid rgb(71, 71, 71);
+    width: 100%;
+}
+.ft-soc-logo{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.ft-soc-logo svg{
+    fill: rgb(117, 117, 121);
+    width: 37px;
+    height: 37px;
+    margin-right: 5px;
+}
+.ft-soc-logo svg :hover{
+    fill: white;
+}
+.copyright{
+    color: rgb(124, 124, 124);
+    font-size: 12px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* see-all page */
+
+.all-movies{
+    display: flex;
+    margin-top: 35px;
+}
+.part-1{
+    width: 300px;
+}
+.part1-head, .part2-head{
+    font-size: 25px;
+    font-weight: 500;
+}
+.languages, .genre, .format{
+    background-color: white;
+    width: 100%;
+    padding: 15px;
+    color: red;
+    border-radius: 10px;
+}
+.top{
+    display: flex;
+}
+.top i{
+    margin-top: -0.5px;
+    font-size: 12px;
+}
+.top p{
+    margin-left: -25px;
+}
+#lg-top{
+    margin-left: 135px;
+}
+.lang{
+    display: flex;
+    flex-wrap: wrap;
+}
+.lang div{
+    /* background-color: black; */
+    margin-right: 15px;
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid rgb(170, 167, 167);
+    font-size: 15px;
+}
+.genre, .format{
+    margin-top: 10px;
+}
+.part-2{
+    margin-left: 15px;
+    /* background-color: red; */
+    width: 100%;;
+}
+.part2-languages{
+    display: flex;
+}
+.part2-languages div{
+    background-color: white;
+    color: red;
+    padding: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-right: 15px;
+    font-size: 13px;
+    border-radius: 20px;
+    border: 1px solid rgb(172, 168, 168);
+}
+.comingsoon{
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 25px;
+    border-radius: 15px;
+}
+.comingsoon p{
+    font-size: 20px;
+    font-weight: 500;
+}
+.link{
+    display: flex;
+    margin-top: 10px;
+    color: red;
+}
+.link i{
+    margin-top: 0px;
+    margin-left: 5px;
+    font-size: 14px;
+}
+.link p{
+    font-size: 15px;
+    font-weight: 500;
+}
+.link{
+    text-decoration: none;
+}
+.part-2 .movie_1{
+    margin-left: 20px;
+}
+.part-2 .movie_slides{
+    flex-wrap: wrap;
+}
+
+.path{
+    background-color: white;
+}
+.path-cnt{
+    display: flex;
+    padding-top: 10px;
+    color: rgb(187, 179, 179);
+    font-size: 13px;
+}
+.path-cnt i{
+    margin-top: 0px;
+    margin-left: 5px;
+}
+#path-m{
+    margin-left: -30px;
+}
+
+.about{
+    margin-top: 20px;
+}
+.about a{
+    color: red;
+}
+#ab-head{
+    font-size: 15px;
+    font-weight: 600;
+    color: rgb(120, 116, 116);
+}
+#ab-para{
+    font-size: 13px;
+    margin-top: -15px;
+    color: rgb(165, 157, 157);
+
 }
