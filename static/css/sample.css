@@ -693,7 +693,7 @@ hr.hr-ft{
 #votes{
     font-size: 16px;
     margin-left: 5px;
-    margin-top: 11px
+    margin-top: 16px
 }
 .movie-ratting p{
     margin-top: 18px;
@@ -744,8 +744,37 @@ hr.hr-ft{
     font-size: 22px;
     font-weight: 600;
 }
-.cast-members .member img{
-    height: 125px;
+.members{
+    display: flex;
+    overflow-x: scroll;
+}
+.members::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  /* Track */
+  .members::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .members::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230); 
+    border-radius: 10px;
+  }
+
+  
+  /* Handle on hover */
+  .members::-webkit-scrollbar-thumb:hover {
+    
+    background: rgb(107, 106, 106); 
+  }
+.members div{
+    margin-right: 60px;
+}
+.members .member img{
+    height: 130px;
     border-radius: 50%;
 }
 .member{
@@ -753,9 +782,81 @@ hr.hr-ft{
     width: 12%;
     text-align: center;
 }
+#mem-head{
+    font-size: 22px;
+    font-weight: 600;
+}
 #mem-name{
     font-weight: 550;
 }
 #mem-role{
     margin-top: -13px;
+}
+
+#tr-head{
+    font-size: 23px;
+    font-weight: 600;
+}
+.top-reviews{
+    margin-top: 35px;
+}
+.tr-main{
+    display: flex;
+}
+#tr-review{
+    margin-left: 75% ;
+    font-size: 16px;
+    font-weight: 600;
+    color: red;
+}
+#summ{
+    color: rgb(177, 177, 177);
+}
+.summery{
+    display: flex;
+    /* background-color: blue; */
+    width: fit-content;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: 1px solid rgb(175, 175, 175);
+    border-radius: 35px;
+    height: 35px;
+    margin-right: 20px;
+}
+#count{
+    margin-left: 5px;
+    /* background-color: rgb(175, 171, 171); */
+    /* padding-left: 2px;
+    padding-right: 2px; */
+    border-radius: 3px;
+    color: rgb(107, 106, 106);
+}
+.summery p{
+    margin-top: 5px;
+}
+.summ-types{
+    display: flex;
+    overflow-x:scroll ;
+    padding-bottom: 15px;
+}
+.reviews{
+    margin-top: 25px ;
+}
+.review{
+    /* background-color: red; */
+    width: 500px;
+    padding: 35px;
+    border: 1px solid rgb(185, 183, 183);
+    border-radius: 5px;
+}
+.first-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.user-logo{
+    font-size: 45px;
+}
+#username{
+    font-size: 16px;
 }
