@@ -839,15 +839,63 @@ hr.hr-ft{
     overflow-x:scroll ;
     padding-bottom: 15px;
 }
+.summ-types::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  /* Track */
+  .summ-types::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .summ-types::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230); 
+    border-radius: 10px;
+  }
+
+  
+  /* Handle on hover */
+  .summ-types::-webkit-scrollbar-thumb:hover {
+    
+    background: rgb(107, 106, 106); 
+  }
 .reviews{
     margin-top: 25px ;
+    display: flex;
+    overflow-x: scroll;
 }
+.reviews::-webkit-scrollbar  {
+    width: 2px;
+    height: 8px;
+  }
+  /* Track */
+  .reviews::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px rgb(230, 230, 230);
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  .reviews::-webkit-scrollbar-thumb {
+    background: rgb(230, 230, 230); 
+    border-radius: 10px;
+  }
+
+  
+  /* Handle on hover */
+  .reviews::-webkit-scrollbar-thumb:hover {
+    
+    background: rgb(107, 106, 106); 
+  }
 .review{
     /* background-color: red; */
-    width: 500px;
+    width: 50%;
     padding: 35px;
     border: 1px solid rgb(185, 183, 183);
     border-radius: 5px;
+    margin-left: 20px;
+
 }
 .first-line{
     display: flex;
@@ -855,8 +903,67 @@ hr.hr-ft{
     justify-content: space-between;
 }
 .user-logo{
-    font-size: 45px;
+    font-size: 40px;
+    margin-top: -50px;
+}
+.user-logo i{
+    color: grey;
 }
 #username{
     font-size: 16px;
+    margin-top: 50px;
+}
+
+.rev-des{
+    margin-top: 25px;
+}
+#rev-des-head{
+    font-weight: 500;
+}
+#rev-des-dis{
+    margin-top: -15px;
+}
+.last-line{
+    display: flex;
+}
+.bi-hand-thumbs-up, .bi-hand-thumbs-down{
+    margin-top: -3px;
+}
+#count1{
+    margin-left: -30px;
+}
+.bi-hand-thumbs-down{
+    margin-left: 8%;
+}
+#days{
+    margin-left: 150px;
+    font-size: 13px;
+    width: 80px
+}
+.bi-share{
+    margin-top: -1px;
+    margin-left: 15px;
+}
+.youmightalsolike{
+    margin-top: 35px;
+}
+.y-head p{
+    font-size: 23px;
+    font-weight: 600;
+}
+.y-heads{
+    display: flex;
+}
+.viewall{
+    margin-left: 70%;
+    display: flex;
+}
+.y-heads .viewall a{
+    text-decoration: none;
+    color: red;
+}
+.viewall .bi-chevron-right{
+    margin: 1px;
+    margin-left: 5px;
+    font-size: 13px;
 }
