@@ -967,3 +967,7 @@ hr.hr-ft{
     margin-left: 5px;
     font-size: 13px;
 }
+.youmightalsolike .movie_slides a{
+    text-decoration: none;
+    color: black;
+}
