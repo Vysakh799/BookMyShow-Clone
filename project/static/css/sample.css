@@ -679,7 +679,7 @@ hr.hr-ft{
     margin-left: 5px;
 }
 .movie-ratting{
-    background-color: rgb(48, 46, 46);
+    background-color: rgb(49, 47, 47);
     display: flex;  
     align-items: center;
     padding-left: 10px;
@@ -689,6 +689,7 @@ hr.hr-ft{
 #ratting{
     font-size: 18px;
     margin-left: 10px;
+    width: 200px;
 }
 #votes{
     font-size: 16px;

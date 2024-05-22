@@ -11,6 +11,7 @@ class movie(models.Model):
     cover_image=models.FileField()
     cover_image1=models.FileField()
     main_image=models.FileField()
+    about=models.TextField()
     def __str__(self):
         return self.name
 class member(models.Model):
