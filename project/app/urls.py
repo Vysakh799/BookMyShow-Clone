@@ -6,6 +6,6 @@ urlpatterns=[
     path('logout',views.logout1),
     path('',views.index),
     path("see_all",views.see_all),
-    path("movie",views.movie),
+    path("movie/<name>",views.view_movie),
     path('register',views.register),
 ]

@@ -1,7 +1,7 @@
 from django.shortcuts import render,redirect
 from django.contrib.auth.models import User,auth
 from django.contrib import messages
-
+from .models import *
 # Login page
 def login(request):
     if request.method=='POST':
@@ -37,8 +37,11 @@ def register(request):
         return render(request,'register.html')
 # pages
 def index(request):
-    return render(request,'index.html')
+    movie1=movie.objects.all()
+    return render(request,'index.html',{'movie':movie1})
 def see_all(request):
     return render(request,'see_all.html')
-def movie(request):
-    return render(request,'movie.html')
+def view_movie(request,name):
+    movie1=movie.objects.get(name=name)
+    lang=language.objects.filter(movie_name=movie1)
+    return render(request,'movie.html',{'movie':movie1,'lang':lang})

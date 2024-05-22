@@ -628,7 +628,7 @@ hr.hr-ft{
 /* Movies page */
 .movie{
     height: 500px;
-    background-image: linear-gradient(90deg, rgb(26, 26, 26) 24.97%, rgb(26, 26, 26) 38.3%, rgba(26, 26, 26, 0.04) 97.47%, rgb(26, 26, 26) 100%),url(../images/vipin-das.jpg);
+    
 }
 .movie-main .movie_1{
     padding-top: 20px;

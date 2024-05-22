@@ -103,20 +103,22 @@
             </div>
           </div>
           <div class="movie_slides">
-            <a href="../movie">
-              <div class="movie_1">
+            {% for i in movie %}
+            <a href="../movie/{{i.name}}">
+              <div class="movie_1" style="margin-right: 30px;">
                 <div class="template">
-                  <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
+                  <img src="{{i.main_image.url}}" alt="">
                 </div>
                 <div class="head">
-                  <p>Guruvayoorambala Nadayil</p>
+                  <p>{{i.name}}</p>
                 </div>
                 <div class="genere">
-                  <p>Comedy/Drama</p>
+                  <p>{{i.genre}}</p>
                 </div>
               </div>
             </a>
-            <div class="movie_2" style="margin-left: 30px;">
+            {% endfor %}
+            <!-- <div class="movie_2" style="margin-left: 30px;">
               <div class="template">
                 <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
               </div>
@@ -214,7 +216,7 @@
               <div class="genere">
                 <p>Comedy/Drama</p>
               </div>
-            </div>
+            </div> -->
           </div>
         </div>
         <div class="ads2 container">
