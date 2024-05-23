@@ -24,3 +24,8 @@ class member(models.Model):
 class language(models.Model):
     language=models.TextField()
     movie_name=models.ForeignKey(movie,on_delete=models.CASCADE)
+class movie_members(models.Model):
+    member_name=models.ForeignKey(member,on_delete=models.CASCADE)
+    movie_name=models.ForeignKey(movie,on_delete=models.CASCADE)
+    def __str__(self):
+        return self.member_name.name

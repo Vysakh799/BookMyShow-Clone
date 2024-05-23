@@ -109,41 +109,13 @@
             <div class="mem container">
                 <p id="mem-head">Cast</p>
                 <div class="members">
+                  {% for i in cast %}
                     <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
+                        <!-- <img src="{{i}}" alt=""> -->
+                        <p id="mem-name">{{i}}</p>
+                        <!-- <p id="mem-role">{{i.role}}</p> -->
                     </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
-                    <div class="member">
-                        <img src="{% static 'images/prithvi.avif' %}" alt="">
-                        <p id="mem-name">Prithviraj Sukumaran</p>
-                        <p id="mem-role">Actor</p>
-                    </div>
+                  {% endfor %}
                 </div>
                 <hr>
                 <p id="mem-head">Crew</p>

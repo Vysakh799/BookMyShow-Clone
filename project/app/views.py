@@ -44,4 +44,6 @@ def see_all(request):
 def view_movie(request,name):
     movie1=movie.objects.get(name=name)
     lang=language.objects.filter(movie_name=movie1)
-    return render(request,'movie.html',{'movie':movie1,'lang':lang})
+    cast=movie_members.objects.filter(movie_name=movie1)
+    print(cast)
+    return render(request,'movie.html',{'movie':movie1,'lang':lang,'cast':cast})
