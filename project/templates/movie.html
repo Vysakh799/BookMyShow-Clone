@@ -30,7 +30,12 @@
                 <i class="bi bi-chevron-down"></i>
             </div>
             <div class="signup">
-                <a href="../login"><input type="button" value="sign in"></a>
+              {% if user.username %}
+              <a href="../logout"><input type="button" value="logout"></a>
+
+              {% else %}
+              <a href="../login"><input type="button" value="sign in"></a>
+              {% endif %}
             </div>
             <div class="menu">
                 <i class="bi bi-list"></i>
@@ -111,50 +116,22 @@
                 <div class="members">
                   {% for i in cast %}
                     <div class="member">
-                        <!-- <img src="{{i}}" alt=""> -->
-                        <p id="mem-name">{{i}}</p>
-                        <!-- <p id="mem-role">{{i.role}}</p> -->
+                        <img src="{{i.member_name.photo.url}}" alt="">
+                        <p id="mem-name">{{i.member_name.name}}</p>
+                        <p id="mem-role">{{i.member_name.role}}</p>
                     </div>
-                  {% endfor %}
+                  {% endfor %} 
                 </div>
                 <hr>
                 <p id="mem-head">Crew</p>
                 <div class="members">
+                  {% for i in crew %}
                     <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
+                        <img src={{i.member_name.photo.url}} alt="">
+                        <p id="mem-name">{{i.member_name.name}}</p>
+                        <p id="mem-role">{{i.member_name.role}}</p>
                     </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
-                    <div class="member">
-                        <img src="https://assets-in.bmscdn.com/iedb/artist/images/website/poster/large/vipin-das-1069682-1666008481.jpg" alt="">
-                        <p id="mem-name">Vipin Das</p>
-                        <p id="mem-role">Director</p>
-                    </div>
+                  {% endfor %}
                 </div>
                 <hr>
             </div>
@@ -343,123 +320,29 @@
                         <p>You might also like</p>
                     </div>
                     <div class="viewall">
-                        <a href=""><p style="font-weight: 600;">View all</p></a>
+                        <a href="../see_all"><p style="font-weight: 600;">View all</p></a>
                         <i class="bi bi-chevron-right"></i>
                     </div>
                 </div>
                 <div class="movie_slides">
-                    <a href="../templates/movie.html">
-                      <div class="movie_1">
+                  {% for i in movies %}
+                  {% if i.name != movie.name %}
+                
+                    <a href="../movie/{{i.name}}">
+                      <div class="movie_1" style="margin-right: 30px;">
                         <div class="template">
-                          <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
+                          <img src="{{i.main_image.url}}" alt="">
                         </div>
                         <div class="head">
-                          <p>Guruvayoorambala Nadayil</p>
+                          <p>{{i.name}}</p>
                         </div>
                         <div class="genere">
-                          <p>Comedy/Drama</p>
+                          <p>{{i.genre}}</p>
                         </div>
                       </div>
                     </a>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
-                    <div class="movie_2" style="margin-left: 30px;">
-                      <div class="template">
-                        <img src="{% static 'images/Guruvayoorambhalanadayil.avif' %}" alt="">
-                      </div>
-                      <div class="head">
-                        <p>Guruvayoorambala Nadayil</p>
-                      </div>
-                      <div class="genere">
-                        <p>Comedy/Drama</p>
-                      </div>
-                    </div>
+                  {% endif %}
+                  {% endfor %}
             </div>
         </div>
         <div class="contact ">
